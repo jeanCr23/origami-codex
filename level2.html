@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level Two - higher difficulty</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Level Two: Technical Creations</h1>
+    </header>
+
+    <main>
+      <!-- About the Level -->
+      <section class="about-level">
+        <h2>About This Level</h2>
+        <ul>
+          <li>
+            ok these are a little harder (but a great transition point if you've
+            never done origami before)
+          </li>
+          <li>can impress a loved one! ✅</li>
+        </ul>
+      </section>
+
+      <!-- DIY Origami Choices -->
+      <section class="diy-origami">
+        <h2>Choose One to Begin!</h2>
+        <div class="origami-options">
+          <div class="origami-item">
+            <img src="images/heart.png" alt="heart" />
+            <button class="button-format" onclick="navigateToTutorial('heart')">
+              Heart 💜
+            </button>
+          </div>
+          <div class="origami-item">
+            <img src="images/crane.png" alt="crane" />
+            <button class="button-format" onclick="navigateToTutorial('crane')">
+              Crane 🪽
+            </button>
+          </div>
+          <div class="origami-item">
+            <img src="images/daylily.png" alt="Origami daylily" />
+            <button
+              class="button-format"
+              onclick="navigateToTutorial('daylily')"
+            >
+              Daylily 🌸
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="index.html">← Back to Home</a></p>
+    </footer>
+
+    <script>
+      // JavaScript function to navigate to specific tutorials
+      function navigateToTutorial(item) {
+        const pages = {
+          heart: "heart-tutorial.html",
+          crane: "crane-tutorial.html",
+          daylily: "daylily-tutorial.html",
+        };
+        if (pages[item]) {
+          window.location.href = pages[item];
+        } else {
+          alert("Tutorial not available.");
+        }
+      }
+    </script>
+  </body>
+</html>

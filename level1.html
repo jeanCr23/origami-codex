@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level One - Easy Origami</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Level One: Nostalgic Creations</h1>
+    </header>
+
+    <main>
+      <!-- About the Level -->
+      <section class="about-level">
+        <h2>About This Level</h2>
+        <ul>
+          <li>Reignite the nostalgia of school days with simple folds.</li>
+          <li>Impress your younger siblings, cousins, or even yourself! ✅</li>
+        </ul>
+      </section>
+
+      <!-- DIY Origami Choices -->
+      <section class="diy-origami">
+        <h2>Choose One to Begin!</h2>
+        <div class="origami-options">
+          <div class="origami-item">
+            <img src="images/paper-boat.png" alt="Paper Boat" />
+            <button
+              class="button-format"
+              onclick="navigateToTutorial('paper-boat')"
+            >
+              Paper Boat ⛴️
+            </button>
+          </div>
+          <div class="origami-item">
+            <img src="images/airplane.png" alt="Paper Airplane" />
+            <button
+              class="button-format"
+              onclick="navigateToTutorial('airplane')"
+            >
+              Airplane ✈️
+            </button>
+          </div>
+          <div class="origami-item">
+            <img src="images/butterfly.png" alt="Origami Butterfly" />
+            <button
+              class="button-format"
+              onclick="navigateToTutorial('butterfly')"
+            >
+              Butterfly 🦋
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="index.html">← Back to Home</a></p>
+    </footer>
+
+    <script>
+      // JavaScript function to navigate to specific tutorials
+      function navigateToTutorial(item) {
+        const pages = {
+          "paper-boat": "paper-boat-tutorial.html",
+          airplane: "airplane-tutorial.html",
+          butterfly: "butterfly-tutorial.html",
+        };
+        if (pages[item]) {
+          window.location.href = pages[item];
+        } else {
+          alert("Tutorial not available.");
+        }
+      }
+    </script>
+  </body>
+</html>

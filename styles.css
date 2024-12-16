@@ -1,0 +1,152 @@
+/* General Body Styling */
+body {
+  background-color: #fffbf4; /* Light retro yellow */
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif; /* Iconic 90s font */
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+header {
+  background-color: #ed96fc; /* Bright retro red */
+  color: white;
+  padding: 20px;
+}
+/* Banner Styling */
+.banner {
+  position: relative;
+  background-image: url("images/bannercrane.png"); /* Replace with your banner image path */
+  background-size: cover;
+  background-position: center;
+  height: 250px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 5px #000;
+  opacity: 0.9; /* Slight opacity for retro style */
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* Dark overlay for better text visibility */
+  z-index: 1;
+}
+
+.banner h1 {
+  z-index: 2;
+  font-size: 2.5em;
+  margin: 0;
+}
+h1 {
+  font-size: 2.5em;
+  text-shadow: 2px 2px #000;
+}
+.heading-span {
+  font-size: x-large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+  color: #8b0aa1;
+}
+/* Section Styling */
+.about-origami,
+.why-origami,
+.choose-ori,
+.about-level,
+.tutorial,
+.navigation {
+  margin: 20px;
+  padding: 15px;
+  border: 2px dotted #333; /* Retro dotted borders */
+  background: #e0f4eb; /* Light cyan */
+}
+
+.about-level ul {
+  list-style-type: square;
+  text-align: left;
+  padding-left: 40px; /* Adjust for readability */
+}
+
+/* Origami Options and Buttons */
+.origami-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.button-format {
+  margin: 10px;
+  padding: 20px 20px;
+  background: #6969e8;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.origami-item {
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.origami-item img,
+.tutorial img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #333;
+  margin-bottom: 10px;
+}
+
+.buttons button,
+.options button {
+  margin: 10px;
+  padding: 20px 20px;
+  background: linear-gradient(45deg, #66ccff, #ff99ff);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttons button:hover,
+.options button:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+/* Navigation and Footer */
+.navigation p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ad0404; /* Same retro red as header */
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #cfcdef;
+  color: rgb(74, 42, 70);
+
+  padding: 10px;
+  font-size: 1.2em;
+}
